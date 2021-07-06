@@ -4,11 +4,29 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Stephen A. Roddewig Web Application Portfolio</title>
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!-- Favicon tags -->
+        <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/lighthouse-favicon.png">
+        <link rel="icon" type="image/svg+xml" sizes="any" href="%PUBLIC_URL%/lighthouse-favicon.svg">
+
+        <!-- Link manifest -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     </head>
     <body>
         <!-- React rendered content appears here -->
         <div id="root">
             
         </div>
+        <script>
+            if ("serviceWorker" in navigator) {
+              window.addEventListener("load", () => {
+                navigator.serviceWorker.register("%PUBLIC_URL%/service-worker.js").then(reg => {
+                  console.log("Serviceworker file registered", reg);
+                });
+              });
+            }
+        </script>
     </body>
 </html>
