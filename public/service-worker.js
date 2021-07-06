@@ -2,6 +2,7 @@ const FILES_TO_CACHE = [
   '/',
   '/index.html',
   '/manifest.webmanifest',
+  '/normalize.css',
   '/lighthouse-favicon.png',
   '/lighthouse-favicon.svg'
 ];
