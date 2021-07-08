@@ -7,12 +7,6 @@
     --heading-font: 'Shippori Mincho B1', serif;
 }
 
-body {
-    background-color: #FFCC00;
-    padding: 20px;
-    margin: 0;
-}
-
 h1, h2, p, ul, li {
     font-family: sans-serif;
 }
@@ -38,7 +32,7 @@ ul.header li a {
 
 .content {
     background-color: #FFF;
-    padding: 20px;
+    padding: 0 40px;
 }
 
 .content h2 {
@@ -52,4 +46,92 @@ ul.header li a {
 
 .active {
     background-color: #0099FF;;
+}
+
+/* Project cards styles */
+.project img {
+    max-width: 750px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    border: 1px solid gray;
+    transition: opacity 0.5s;
+}
+
+.project img:hover {
+    opacity: 0.75;
+}
+
+.project li {
+    list-style-type: none;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+nav {
+    padding: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(219, 218, 218);
+    padding: 20px 20px 50px 20px;
+}
+
+footer .contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+}
+
+footer .contact-info div {
+    margin-top: 10px;
+    margin-right: 50px;
+    font-size: 130%;
+}
+
+footer .contact-info div a,
+footer .contact-info div i {
+    transition: opacity 0.25s;
+}
+
+footer .contact-info div:hover a,
+footer .contact-info div:hover i {
+    opacity: 0.75;
+}
+
+footer .contact-info div:last-child {
+    margin-right: 0px;
+}
+
+footer .contact-info #phone::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f879";
+    padding-right: 10px;
+}
+
+footer .contact-info .fab,
+footer .contact-info .far {
+    padding-right: 10px;
+    font-size: 120%;
+}
+
+@media only screen and (max-width: 1100px) {
+    footer .contact-info {
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    footer .contact-info div {
+        margin-right: 0px;
+        margin-top: 15px;
+    }
 }
