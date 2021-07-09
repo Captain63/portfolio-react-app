@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <nav>
-                <h1>Stephen A. Roddewig</h1>
+                <h1 id="title">Stephen A. Roddewig</h1>
                 <ul className="header">
                     <li>
                         <NavLink exact to="/">Home</NavLink>
