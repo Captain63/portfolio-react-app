@@ -143,6 +143,10 @@ footer .contact-info br {
     display: none;
 }
 
+form {
+    max-width: 800px;
+}
+
 form label {
     margin-top: 15px;
 }
