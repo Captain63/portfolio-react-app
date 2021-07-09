@@ -7,6 +7,10 @@
     --heading-font: 'Shippori Mincho B1', serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 h1, h2, p, ul, li {
     font-family: sans-serif;
 }
@@ -20,6 +24,7 @@ ul.header li {
 ul.header {
     background-color: #111;
     padding: 0;
+    border-radius: 10px;
 }
 
 ul.header li a {
@@ -28,16 +33,22 @@ ul.header li a {
     text-decoration: none;
     padding: 20px;
     display: inline-block;
+    border-radius: 10px;
 }
 
 .content {
     background-color: #FFF;
-    padding: 0 40px;
+    padding: 0 40px 40px 40px;
 }
 
 .content h2 {
     padding: 0;
-    margin: 0;
+    margin-bottom: 15px;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 .content li {
@@ -48,13 +59,18 @@ ul.header li a {
     background-color: #0099FF;;
 }
 
+.about-content {
+    max-width: 1000px;
+}
+
 /* Project cards styles */
 .project img {
     max-width: 750px;
     width: 100%;
     display: block;
     margin: 20px auto;
-    border: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
     transition: opacity 0.5s;
 }
 
@@ -123,6 +139,22 @@ footer .contact-info .far {
     font-size: 120%;
 }
 
+footer .contact-info br {
+    display: none;
+}
+
+form label {
+    margin-top: 15px;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+.hide {
+    display: none;
+}
+
 @media only screen and (max-width: 1100px) {
     footer .contact-info {
         flex-direction: column;
@@ -133,5 +165,32 @@ footer .contact-info .far {
     footer .contact-info div {
         margin-right: 0px;
         margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    h1#title {
+        margin: 20px 0;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    ul.header li {
+        display: block;
+        width: 100%;
+    }
+
+    ul.header li a {
+        width: 100%;
+    }
+
+    footer .contact-info br {
+        display: block;
+    }
+
+    footer .contact-info #email {
+        text-align: center;
     }
 }
