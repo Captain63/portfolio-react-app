@@ -3,9 +3,9 @@ import { Component } from "react";
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="about-content">
                 <h2>About Me</h2>
-                <div class="about-content">
+                <div>
                     <h3>My Skills</h3>
                     <p>
                         <u>Languages</u>: JavaScript ES6+, CSS3, HTML5, SQL, NoSQL, Git
