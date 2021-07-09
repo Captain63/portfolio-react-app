@@ -12,7 +12,7 @@ class Footer extends Component {
                         
                         <div id="email">
                             <i className="far fa-envelope"></i>
-                            <a href="mailto:stephen.a.rodd@gmail.com">stephen.a.rodd@gmail.com</a>
+                            <a href="mailto:stephen.a.rodd@gmail.com">stephen.a.rodd<br />@gmail.com</a>
                         </div>
 
                         <div id="github">
